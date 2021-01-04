@@ -1,0 +1,44 @@
+extends base.pug
+
+block script
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    
+        section#introSection
+            div Welcome to Newton Dance Academy
+            div.smile Dance is life 
+        section#missionsection
+            h2 Our Mission
+            div.card
+                h3 Master Dance Moves
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/1st.png")
+                    div.card-content
+                        p Master every move of dance with us.    
+            div.card
+                h3 Become a Choreographer
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2nd.png")
+                    div.card-content
+                        p Beacome a choreographer and educate the world with your moves. 
+            div.card
+                h3 Fit your body with Dance
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/3rd.png")
+                    div.card-content
+                        p Now stay fit and healthy while dancing. 
+        section#sponserSection
+            h2 Section for sponsers
+            div#sponser
+                img(src="/static/img/apple.png", alt="sponser image", Class="spImage")
+                img(src="/static/img/google.png", alt="sponser image", Class="spImage")
+                img(src="/static/img/tesla.png", alt="sponser image", Class="spImage")
+                img(src="/static/img/spacex.png", alt="sponser image", Class="spImage")
